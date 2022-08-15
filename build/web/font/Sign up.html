@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+
+	<!-- <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<title>Bootstrap Sign up Form with Icons</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<meta charset="utf-8">
+	<title>ATP Cosmectics</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="Free HTML Templates" name="keywords">
+	<meta content="Free HTML Templates" name="description">
+
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Libraries Stylesheet -->
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+	<!-- Customized Bootstrap Stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
+	<style type="text/css">
+		.form-control,
+		.form-control:focus,
+		.input-group-addon {
+			border-color: #e1e1e1;
+		}
+
+		.form-control,
+		.btn {
+			border-radius: 3px;
+		}
+
+		.signup-form {
+			width: 390px;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+
+		.signup-form form {
+			color: #999;
+			border-radius: 3px;
+			margin-bottom: 15px;
+			background: #fff;
+			box-shadow: 2px 2px 2px 2px rgba(0.3, 0.3, 0.3, 0.3);
+			padding: 30px;
+		}
+
+		.signup-form h2 {
+			color: #333;
+			font-weight: bold;
+			margin-top: 0;
+		}
+
+		.signup-form hr {
+			margin: 0 -30px 20px;
+		}
+
+		.signup-form .form-group {
+			margin-bottom: 20px;
+		}
+
+		.signup-form label {
+			font-weight: normal;
+			font-size: 13px;
+		}
+
+		.signup-form .form-control {
+			min-height: 38px;
+			box-shadow: none !important;
+		}
+
+		.signup-form .input-group-addon {
+			max-width: 42px;
+			text-align: center;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+
+		.signup-form input[type="checkbox"] {
+			margin-top: 2px;
+		}
+
+		.signup-form .btn {
+			font-size: 16px;
+			font-weight: bold;
+			background: #D9B9B0;
+			border: none;
+			min-width: 140px;
+		}
+
+		.signup-form .btn:hover,
+		.signup-form .btn:focus {
+			background: #D9B9B0;
+			outline: none;
+		}
+
+		.signup-form a {
+			color: #A29896;
+			text-decoration: underline;
+		}
+
+		.signup-form a:hover {
+			text-decoration: none;
+		}
+
+		.signup-form form a {
+			color: #D9B9B0;
+			text-decoration: none;
+		}
+
+		.signup-form form a:hover {
+			text-decoration: underline;
+		}
+
+		.signup-form .fa {
+			font-size: 21px;
+		}
+
+		.signup-form .fa-paper-plane {
+			font-size: 18px;
+		}
+
+		.signup-form .fa-check {
+			color: #A29896;
+			left: 17px;
+			top: 18px;
+			font-size: 7px;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- <script>
+		var check = function () {
+			if (document.getElementById('password').value ==
+				document.getElementById('confirm_password').value) {
+				document.getElementById('message').style.color = 'green';
+				document.getElementById('message').innerHTML = 'matching';
+			} else {
+				document.getElementById('message').style.color = 'red';
+				document.getElementById('message').innerHTML = 'not matching';
+			}
+		}
+	</script> -->
+	<div class="container-fluid">
+		<div class="row bg-secondary py-2 px-xl-5">
+			<div class="col-lg-6 d-none d-lg-block">
+				<div class="d-inline-flex align-items-center">
+					<a class="text-dark" href="">FAQs</a>
+					<span class="text-muted px-2">|</span>
+					<a class="text-dark" href="">Help</a>
+					<span class="text-muted px-2">|</span>
+					<a class="text-dark" href="">Support</a>
+				</div>
+			</div>
+			<div class="col-lg-6 text-center text-lg-right">
+				<div class="d-inline-flex align-items-center">
+					<a class="text-dark px-2" href="">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a class="text-dark px-2" href="">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a class="text-dark px-2" href="">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a class="text-dark px-2" href="">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a class="text-dark pl-2" href="">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center py-3 px-xl-5">
+			<div class="col-lg-3 d-none d-lg-block">
+				<a href="" class="text-decoration-none">
+					<h1 class="m-0 display-5 font-weight-semi-bold"><span
+							class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+				</a>
+			</div>
+			<div class="col-lg-6 col-6 text-left">
+				<form action="">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for products">
+						<div class="input-group-append">
+							<span class="input-group-text bg-transparent text-primary">
+								<i class="fa fa-search"></i>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-3 col-6 text-right">
+				<a href="" class="btn border">
+					<i class="fas fa-heart text-primary"></i>
+					<span class="badge">0</span>
+				</a>
+				<a href="" class="btn border">
+					<i class="fas fa-shopping-cart text-primary"></i>
+					<span class="badge">0</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div style="margin-top:2%;" class="container-fluid ">
+		<div style="padding-left: 0 !important;padding-right: 0 !important;" class=" border-top px-xl-5">
+
+			<nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+				<a href="" class="text-decoration-none d-block d-lg-none">
+					<h1 class="m-0 display-5 font-weight-semi-bold"><span
+							class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div style="margin-top:2%;margin-bottom:2%;" class="collapse navbar-collapse justify-content-between"
+					id="navbarCollapse">
+
+					<ul>
+
+						<li class=" dropdown-1">
+							<a href="#" id="button-home-1" class="nav-link" data-toggle="dropdown">Home</a>
+
+						</li>
+						<li class=" dropdown-1">
+							<a href="#" style="color:#A29896; border:3px solid #FFF8F8" class="nav-link"
+								data-toggle="dropdown">Son</a>
+							<div class=" dropdown-content  ">
+								<a href="" class="a-drop ">Men's Dresses</a>
+								<a href="" class=" a-drop">Women's Dresses</a>
+								<a href="" class=" a-drop">Baby's Dresses</a>
+							</div>
+						</li>
+						<li class=" dropdown-1">
+							<a href="#" style="color:#A29896;border:3px solid #FFF8F8" class="nav-link"
+								data-toggle="dropdown">Tẩy trang</a>
+							<div class=" dropdown-content  ">
+								<a href="" class="a-drop ">Men's Dresses</a>
+								<a href="" class=" a-drop">Women's Dresses</a>
+								<a href="" class=" a-drop">Baby's Dresses</a>
+							</div>
+						</li>
+						<li class=" dropdown-1">
+							<a href="#" style="color:#A29896;border:3px solid #FFF8F8" class="nav-link"
+								data-toggle="dropdown">Tinh chât
+								dưỡng</a>
+							<div class=" dropdown-content  ">
+								<a href="" class="a-drop ">Men's Dresses</a>
+								<a href="" class=" a-drop">Women's Dresses</a>
+								<a href="" class=" a-drop">Baby's Dresses</a>
+							</div>
+						</li>
+						<li class=" dropdown-1">
+							<a href="#" style="color:#A29896;border:3px solid #FFF8F8" class="nav-link"
+								data-toggle="dropdown">Mặt nạ</a>
+							<div class=" dropdown-content  ">
+								<a href="" class="a-drop ">Men's Dresses</a>
+								<a href="" class=" a-drop">Women's Dresses</a>
+								<a href="" class=" a-drop">Baby's Dresses</a>
+							</div>
+						</li>
+						<li class=" dropdown-1">
+							<a href="#" style="color:#A29896;border:3px solid #FFF8F8" class="nav-link"
+								data-toggle="dropdown">Kem chống
+								nắng</a>
+							<div class=" dropdown-content  ">
+								<a href="" class="a-drop ">Men's Dresses</a>
+								<a href="" class=" a-drop">Women's Dresses</a>
+								<a href="" class=" a-drop">Baby's Dresses</a>
+							</div>
+						</li>
+						<li class=" dropdown-1">
+							<a href="#" style="color:#A29896;border:3px solid #FFF8F8" class="nav-link"
+								data-toggle="dropdown">Sữa rửa
+								mặt</a>
+							<div class=" dropdown-content  ">
+								<a href="" class="a-drop ">Men's Dresses</a>
+								<a href="" class=" a-drop">Women's Dresses</a>
+								<a href="" class=" a-drop">Baby's Dresses</a>
+							</div>
+						</li>
+					</ul>
+					<div style="width: 20%;margin-left:0 !important" class="navbar-nav ml-auto py-0">
+						<a href="" class="nav-item nav-link">Login</a>
+						<a style="max-width: 100%;" href="" class="nav-item nav-link">Sign Up</a>
+					</div>
+				</div>
+			</nav>
+
+
+		</div>
+	</div>
+	<div class="signup-form">
+		<form action="/examples/actions/confirmation.php" method="post">
+			<h2>Sign Up</h2>
+			<p>Please fill in this form to create an account!</p>
+			<hr>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+					<input type="email" class="form-control" name="email" placeholder="Email Address"
+						required="required">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					<input type="text" id="password" class="form-control" name="password" placeholder="Password" required="required">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="fa fa-lock"></i>
+						<i class="fa fa-check"></i>
+					</span>
+					<input type="text" id="confirm_password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+						 required="required">
+					<span id='message'></span>
+
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a
+						href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+			</div>
+		</form>
+		<div class="text-center">Already have an account? <a href="#">Login here</a></div>
+	</div>
+	<div class="container-fluid bg-secondary text-dark mt-5 " id="footer">
+		<div style="display:flex;align-items: flex-start !important;flex-wrap: wrap !important;" class="px-xl-5 pt-5">
+
+			<div style="margin-right: 20px;margin-left: 50px;" class="col-md-4 mb-5">
+				<h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+				<form action="">
+					<div class="form-group">
+						<input type="text" class="form-control border-0 py-4" placeholder="Your Name"
+							required="required" />
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+							required="required" />
+					</div>
+					<div>
+						<button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+					</div>
+				</form>
+			</div>
+			<div style="display:inline-block !important; margin-right: 30px;margin-left: 20px;" class="">
+				<div class="">
+					<div class=" ">
+						<h5 class="font-weight-bold text-dark ">Hỗ trợ khách hàng</h5>
+						<div class="d-flex flex-column ">
+
+							<a href="About-you.html" class="nav-item nav-link" id="About-you">Về chúng tôi</a>
+							<a href="Helf-buy.html" class="nav-item nav-link" id="Help-buy">Hướng dẫn mua hàng</a>
+							<a href="Helf-pay.html" class="nav-item nav-link" id="Help-pay">Hướng dẫn thanh toán</a>
+							<a href="Contact.html" class="nav-item nav-link" id="Contact">Liên hệ</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="display:inline-block !important;margin-right: 20px;" class="">
+				<div class="">
+					<div class=" ">
+						<h5 class="font-weight-bold text-dark ">Chính sách</h5>
+						<div class="d-flex flex-column ">
+
+							<a href="Chinh sach bao mat.html" class="nav-item nav-link" id="chinhsachbaomat">Chính sách
+								bảo mật</a>
+							<a href="Chinh sach doi tra.html" class="nav-item nav-link" id="chinhsachdoitra">Chính sách
+								đổi trả</a>
+							<a href="Chinh sach van chuyen.html" class="nav-item nav-link" id="chinhsachvanchuyen">Chính
+								sách vận chuyển</a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="display:inline-block !important;margin-left: 50px;" id="map"
+				class="col-lg-3 col-md-4 mb-5 pr-3 pr-xl-5 ">
+
+				<div class="grid-item medium--one-half large--three-twelfths">
+
+					<div id="instafeed" class="thirty">
+						<div class="fb-page fb_iframe_widget"
+							data-href="https://www.facebook.com/ATP-Cosmetics-101771418573593/?ref=pages_you_manage"
+							data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+							data-show-facepile="true" fb-xfbml-state="rendered"
+							fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=280&amp;hide_cover=false&amp;href=https://www.facebook.com/ATP-Cosmetics-101771418573593/?ref=pages_you_manage&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false">
+							<span style="vertical-align: bottom; width: 280px; height: 130px;"><iframe
+									name="f17ba0e8e1a1d34" width="1000px" height="1000px"
+									data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin"
+									frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+									allow="encrypted-media"
+									src="https://www.facebook.com/v12.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df39a00859b294a8%26domain%3Djokerface.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fjokerface.vn%252Fffec88752a857%26relation%3Dparent.parent&amp;container_width=280&amp;hide_cover=false&amp;href=https://www.facebook.com/ATP-Cosmetics-101771418573593/?ref=pages_you_manage&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"
+									style="border: none; visibility: visible; width: 280px; height: 130px;"
+									class=""></iframe></span></div>
+
+					</div>
+				</div>
+				<p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Ngách 21, ngõ Tam Khương, đường
+					Tôn Thất Tùng, phường Khương Thượng, quận Đống Đa, thành phố Hà Nội.</p>
+				<p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+				<p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+			</div>
+
+
+		</div>
+
+		<div class="row border-top border-light mx-xl-5 py-4">
+			<div class="col-md-6 px-xl-0">
+				<p class="mb-md-0 text-center text-md-left text-dark">
+					&copy; <a class="text-dark font-weight-semi-bold" href="#">Your Site Name</a>. All Rights Reserved.
+					Designed
+					by
+					<a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">HTML Codex</a><br>
+					Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+				</p>
+			</div>
+			<div class="col-md-6 px-xl-0 text-center text-md-right">
+				<img class="img-fluid" src="img/payments.png" alt="">
+			</div>
+		</div>
+
+	</div>
+	<!-- Footer End -->
+
+	<!-- Back to Top -->
+	<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+	<!-- JavaScript Libraries -->
+	<script>
+		var password = document.getElementById("password"),
+			confirm_password = document.getElementById("confirm_password");
+
+		function validatePassword() {
+			if (password.value != confirm_password.value) {
+				confirm_password.setCustomValidity("Passwords Don't Match");
+			} else {
+				confirm_password.setCustomValidity('');
+			}
+		}
+
+		password.onchange = validatePassword;
+		confirm_password.onkeyup = validatePassword;
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="lib/easing/easing.min.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Contact Javascript File -->
+	<script src="mail/jqBootstrapValidation.min.js"></script>
+	<script src="mail/contact.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
